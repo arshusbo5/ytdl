@@ -56,5 +56,5 @@ def youtube_audio_url():
     return jsonify({"success": False, "error": "Failed to get download URL"}), 400
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 3000))  # Use Railway's assigned port or default to 3000
+   port = int(os.environ.get("PORT", 8080))  # Use Railway's assigned port or default to 3000
     app.run(host='0.0.0.0', port=port)
